@@ -1,1 +1,8 @@
 # live-coding-server
+
+# build command
+pip install -r requirements.txt
+
+
+# start command
+uvicorn main:app --host 0.0.0.0 --port $PORT
