@@ -1,15 +1,27 @@
-# base de datos simlada con datos de prueba
+# Base de datos simulada con más logs y fechas variadas
 db_logs = [
-    {
-        "timestamp": "2025-01-10T15:30:45Z",
-        "service_name": "auth-service",
-        "severity": "INFO",
-        "message": "Usuario autenticado correctamente"
-    },
-    {
-        "timestamp": "2025-02-10T15:30:45Z",
-        "service_name": "logging-service",
-        "severity": "ERROR",
-        "message": "Error en la solicitud"
-    }
+    {"timestamp": "2025-01-05T08:00:00Z", "service_name": "auth-service", "severity": "INFO", "message": "Usuario autenticado correctamente"},
+    {"timestamp": "2025-01-10T12:15:00Z", "service_name": "logging-service", "severity": "ERROR", "message": "Error en la solicitud"},
+    {"timestamp": "2025-01-15T09:30:00Z", "service_name": "payment-service", "severity": "WARNING", "message": "Pago pendiente de verificación"},
+    {"timestamp": "2025-01-20T16:45:00Z", "service_name": "inventory-service", "severity": "INFO", "message": "Stock actualizado correctamente"},
+    {"timestamp": "2025-02-01T10:00:00Z", "service_name": "auth-service", "severity": "ERROR", "message": "Intento de login fallido"},
+    {"timestamp": "2025-02-05T14:20:00Z", "service_name": "logging-service", "severity": "DEBUG", "message": "Proceso de limpieza de logs iniciado"},
+    {"timestamp": "2025-02-10T11:30:00Z", "service_name": "payment-service", "severity": "INFO", "message": "Pago procesado correctamente"},
+    {"timestamp": "2025-02-15T08:50:00Z", "service_name": "inventory-service", "severity": "WARNING", "message": "Nivel de stock bajo"},
+    {"timestamp": "2025-03-01T09:10:00Z", "service_name": "auth-service", "severity": "INFO", "message": "Usuario desconectado"},
+    {"timestamp": "2025-03-05T12:40:00Z", "service_name": "logging-service", "severity": "ERROR", "message": "Error al guardar log en DB"},
+    {"timestamp": "2025-03-10T07:20:00Z", "service_name": "payment-service", "severity": "DEBUG", "message": "Validación de tarjeta en proceso"},
+    {"timestamp": "2025-03-15T15:50:00Z", "service_name": "inventory-service", "severity": "INFO", "message": "Nuevo producto agregado"},
+    {"timestamp": "2025-04-01T08:00:00Z", "service_name": "auth-service", "severity": "WARNING", "message": "Demasiados intentos de login fallidos"},
+    {"timestamp": "2025-04-05T10:30:00Z", "service_name": "logging-service", "severity": "INFO", "message": "Logs revisados correctamente"},
+    {"timestamp": "2025-04-10T13:15:00Z", "service_name": "payment-service", "severity": "ERROR", "message": "Transacción rechazada"},
+    {"timestamp": "2025-04-15T09:50:00Z", "service_name": "inventory-service", "severity": "DEBUG", "message": "Chequeo de inventario automático"},
+    {"timestamp": "2025-05-01T11:20:00Z", "service_name": "auth-service", "severity": "INFO", "message": "Usuario autenticado con MFA"},
+    {"timestamp": "2025-05-05T14:40:00Z", "service_name": "logging-service", "severity": "WARNING", "message": "Exceso de logs en la cola"},
+    {"timestamp": "2025-05-10T08:10:00Z", "service_name": "payment-service", "severity": "INFO", "message": "Pago completado correctamente"},
+    {"timestamp": "2025-05-15T16:25:00Z", "service_name": "inventory-service", "severity": "ERROR", "message": "Error al actualizar stock"},
+    {"timestamp": "2025-06-01T09:00:00Z", "service_name": "auth-service", "severity": "DEBUG", "message": "Chequeo de sesión iniciado"},
+    {"timestamp": "2025-06-05T12:15:00Z", "service_name": "logging-service", "severity": "INFO", "message": "Nuevo log registrado"},
+    {"timestamp": "2025-06-10T07:50:00Z", "service_name": "payment-service", "severity": "WARNING", "message": "Pago en espera de confirmación"},
+    {"timestamp": "2025-06-15T15:30:00Z", "service_name": "inventory-service", "severity": "INFO", "message": "Inventario revisado correctamente"}
 ]
