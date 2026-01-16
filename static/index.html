@@ -33,12 +33,32 @@
       <!-- Logging -->
       <div class="mb-10">
         <h3 class="text-xl font-semibold text-blue-400 mb-4">Logging</h3>
+
         <div class="grid gap-6 md:grid-cols-2">
+          <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+            <span class="px-3 py-1 text-sm rounded-full bg-blue-600/20 text-blue-400 font-medium">GET</span>
+            <h4 class="mt-3 text-lg font-semibold text-white">/logging/logs/:level</h4>
+            <p class="mt-2 text-slate-300 text-sm">Filtra los logs por nivel (info, warn, error).</p>
+            <pre class="bg-slate-900 p-4 pb-0 rounded-xl text-sm text-green-400 mt-3 overflow-x-auto">
+Query Params (opcionales):
+
+?severity=INFO | WARNING | ERROR | DEBUG
+&timestamp_start=YYYY-MM-DD
+&timestamp_end=YYYY-MM-DD
+
+Ejemplos:
+/logging/logs?severity=ERROR
+/logging/logs?timestamp_start=2025-03-01&timestamp_end=2025-04-01
+/logging/logs?severity=WARNING&timestamp_start=2025-04-01&timestamp_end=2025-05-01
+            </pre>
+          </div>
+
           <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
             <span class="px-3 py-1 text-sm rounded-full bg-green-600/20 text-green-400 font-medium">GET</span>
             <h4 class="mt-3 text-lg font-semibold text-white">/logging/logs</h4>
             <p class="mt-2 text-slate-300 text-sm">Obtiene el listado de logs generados por la aplicación.</p>
           </div>
+
           <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
             <span class="px-3 py-1 text-sm rounded-full bg-purple-600/20 text-purple-400 font-medium">POST</span>
             <h4 class="mt-3 text-lg font-semibold text-white">/logging/logs</h4>
@@ -60,11 +80,7 @@ Body (JSON):
 }
             </pre>
           </div>
-          <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700">
-            <span class="px-3 py-1 text-sm rounded-full bg-blue-600/20 text-blue-400 font-medium">GET</span>
-            <h4 class="mt-3 text-lg font-semibold text-white">/logging/logs/:level</h4>
-            <p class="mt-2 text-slate-300 text-sm">Filtra los logs por nivel (info, warn, error).</p>
-          </div>
+
         </div>
       </div>
 
